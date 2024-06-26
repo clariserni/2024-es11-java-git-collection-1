@@ -23,8 +23,8 @@ public class App {
 
 
     public static void main(String[] args) throws Exception {
-        testRandomInteger();
-        //testRandomUniqueInteger();
+        //testRandomInteger();
+        testRandomUniqueInteger();
         //testFrequencyMap();
     }
 
@@ -39,10 +39,24 @@ public class App {
 
     public static void testRandomUniqueInteger(){
         DataHelper dh = new DataHelper();
+        try{
+            System.out.println("Size: "+dh.getRandomUniqueInteger(8));
+        }catch (Exception e){
+            System.out.println("Numero non valido");
+        }
 
-        System.out.println("Size: "+dh.getRandomUniqueInteger(8));
-        System.out.println("Size, max: "+dh.getRandomUniqueInteger(7,10));
-        System.out.println("Size, min, max: "+dh.getRandomUniqueInteger(10,4,20));
+       try {
+            System.out.println("Size, max: "+dh.getRandomUniqueInteger(10,5)); 
+        } catch (Exception e) {
+            System.out.println("Numero non valido");
+        }
+
+        try {
+            System.out.println("Size, min, max: "+dh.getRandomUniqueInteger(10,4,20));
+        } catch (Exception e) {
+            System.out.println("Numero non valido");
+        }
+        
     }
 
     public static void testFrequencyMap(){

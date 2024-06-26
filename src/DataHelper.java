@@ -65,7 +65,7 @@ public class DataHelper {
             Set<Integer> nonDuplicati = new HashSet<>();
 
             if(size <=0 || size>11){
-                System.out.println("Numero non consentito");
+                throw new IllegalArgumentException("Numero non consentito");
 
             } else{
             while(nonDuplicati.size()<size){
@@ -83,7 +83,7 @@ public class DataHelper {
             Set<Integer> nonDuplicati = new HashSet<>();
 
             if(size <=0 || size>max+1){
-                System.out.println("Numero non consentito");
+                throw new IllegalArgumentException("Numero non consentito");
 
             } else{
             while(nonDuplicati.size()<size){
@@ -101,7 +101,7 @@ public class DataHelper {
             Set<Integer> nonDuplicati = new HashSet<>();
 
             if(size <=0 || size>(max+1)-min){
-                System.out.println("Numero non consentito");
+               throw new IllegalArgumentException("Numero non consentito");
 
             } else{
             while(nonDuplicati.size()<size){
