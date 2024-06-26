@@ -66,15 +66,17 @@ public class DataHelper {
 
             if(size <=0 || size>11){
                 throw new IllegalArgumentException("Numero non consentito");
+            } 
 
-            } else{
             while(nonDuplicati.size()<size){
                 int numeroRandom = random.nextInt(11);
                 nonDuplicati.add(numeroRandom);
                 }
+
+                return nonDuplicati;
             }
-            return nonDuplicati;
-        }
+           
+        
 
         // restituisce una lista di numeri casuali NON DUPLICATI compresi tra 0 e max
         public static Set<Integer> getRandomUniqueInteger(int size, int max) { 
@@ -85,14 +87,16 @@ public class DataHelper {
             if(size <=0 || size>max+1){
                 throw new IllegalArgumentException("Numero non consentito");
 
-            } else{
+            } 
+            
             while(nonDuplicati.size()<size){
                 int numeroRandom = random.nextInt(max+1);
                 nonDuplicati.add(numeroRandom);
                 }
+                return nonDuplicati;
             }
-            return nonDuplicati;
-        }
+            
+        
 
     // restituisce una lista di numeri casuali NON DUPLICATI compresi tra min e max
         public static Set<Integer> getRandomUniqueInteger(int size, int min, int max) {
@@ -103,12 +107,13 @@ public class DataHelper {
             if(size <=0 || size>(max+1)-min){
                throw new IllegalArgumentException("Numero non consentito");
 
-            } else{
+            } 
+
             while(nonDuplicati.size()<size){
                 int numeroRandom = random.nextInt((max+1)-min) + min;
                 nonDuplicati.add(numeroRandom);
                 }
-            }
+            
             return nonDuplicati;
 
         }
