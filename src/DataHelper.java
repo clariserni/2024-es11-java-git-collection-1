@@ -13,30 +13,34 @@ public class DataHelper {
     // restituisce una lista di numeri interi casuali compresi tra 0 e 10
     public static List<Integer> getRandomInteger(int size) {
 
-        Random random = new Random();
+        // Random random = new Random();
 
-        List<Integer> numeriRandom = new ArrayList<>();
+        // List<Integer> numeriRandom = new ArrayList<>();
 
-        for (int i=0; i<size; i++){
-            int numeroRandom = random.nextInt(11);
-            numeriRandom.add(numeroRandom);
-        }
+        // for (int i=0; i<size; i++){
+        //     int numeroRandom = random.nextInt(11);
+        //     numeriRandom.add(numeroRandom);
+        // }
     
-        return numeriRandom;
+        // return numeriRandom;
+
+        return getRandomInteger(size, 10);
     }
 
     // restituisce una lista di numeri interi casuali compresi tra 0 e max
     public static List<Integer> getRandomInteger(int size, int max) {
-        Random random = new Random();
+        // Random random = new Random();
 
-        List<Integer> numeriRandom = new ArrayList<>();
+        // List<Integer> numeriRandom = new ArrayList<>();
 
-        for (int i=0; i<size; i++){
-            int numeroRandom = random.nextInt(max+1);
-            numeriRandom.add(numeroRandom);
-        }
+        // for (int i=0; i<size; i++){
+        //     int numeroRandom = random.nextInt(max+1);
+        //     numeriRandom.add(numeroRandom);
+        // }
     
-        return numeriRandom;
+        // return numeriRandom;
+
+        return getRandomInteger(size, 0, max);
     }
 
     // restituisce una lista di numeri interi casuali compresi tra min e max

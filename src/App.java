@@ -23,9 +23,9 @@ public class App {
 
 
     public static void main(String[] args) throws Exception {
-        //testRandomInteger();
+        testRandomInteger();
         //testRandomUniqueInteger();
-        testFrequencyMap();
+        //testFrequencyMap();
     }
 
     public static void testRandomInteger(){
